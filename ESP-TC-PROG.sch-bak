@@ -399,9 +399,9 @@ F 3 "" H 4000 3000 50  0001 C CNN
 	1    4000 3000
 	1    0    0    -1  
 $EndComp
-Text GLabel 4300 3000 2    50   Input ~ 0
-D-
 Text GLabel 3700 2900 0    50   Input ~ 0
+D-
+Text GLabel 4300 3000 2    50   Input ~ 0
 D+
 $Comp
 L power:VBUS #PWR0117
@@ -464,19 +464,8 @@ Wire Wire Line
 	7650 3700 7650 3750
 Wire Wire Line
 	7650 3700 7750 3700
-Text GLabel 8050 3500 1    50   Input ~ 0
+Text GLabel 8050 3900 3    50   Input ~ 0
 nIO0
-$Comp
-L power:GND #PWR0119
-U 1 1 5E80356D
-P 8050 3900
-F 0 "#PWR0119" H 8050 3650 50  0001 C CNN
-F 1 "GND" H 8055 3727 50  0000 C CNN
-F 2 "" H 8050 3900 50  0001 C CNN
-F 3 "" H 8050 3900 50  0001 C CNN
-	1    8050 3900
-	1    0    0    -1  
-$EndComp
 Text GLabel 5350 2350 1    50   Input ~ 0
 V3
 Text GLabel 7650 3950 3    50   Input ~ 0
@@ -555,17 +544,6 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 7550 3450 50  000
 	1    0    0    1   
 $EndComp
 Connection ~ 7350 3450
-$Comp
-L Transistor_FET:2N7002 Q3
-U 1 1 5E84CC24
-P 7950 3700
-F 0 "Q3" H 8155 3746 50  0000 L CNN
-F 1 "AO3400A" H 8155 3655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8150 3625 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 7950 3700 50  0001 L CNN
-	1    7950 3700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:LED D1
 U 1 1 5E85BDE8
@@ -650,4 +628,17 @@ Connection ~ 5300 3050
 Wire Wire Line
 	5300 3500 5300 3550
 Connection ~ 5300 3550
+$Comp
+L Transistor_FET:AO3401A Q?
+U 1 1 5E916262
+P 7950 3700
+F 0 "Q?" H 8155 3654 50  0000 L CNN
+F 1 "AO3401A" H 8155 3745 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8150 3625 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 7950 3700 50  0001 L CNN
+	1    7950 3700
+	1    0    0    1   
+$EndComp
+Text GLabel 8050 3500 1    50   Input ~ 0
+V3
 $EndSCHEMATC
