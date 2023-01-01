@@ -1,6 +1,6 @@
-# ESP-TC-PROG
+# USB-UART-BRIDGE
 
-Smol and friendly ESP32 programmer with Tag-Connect 2030 Connector :3
+Smol and friendly USB-UART-BRIDGE & ESP32 programmer with Tag-Connect 2030 Connector :3
 
 [KiCAD lib](https://github.com/Jana-Marie/ESP-TC-PROG/tree/main/KiCAD-libs)
 
